@@ -44,7 +44,6 @@ body {
 
 .header-flex {
   display: flex;
-    
 }
 
 .logo {
@@ -135,8 +134,21 @@ body {
 .portfolio-link:focus {
   color: var(--blue-color);
   fill: var(--blue-color);
+  transition: background 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 42.5px;
+  background: var(--blue-color);
+  height: 4px;
+  border-radius: 10px 10px 10px 10px;
+}
 
 /*footer*/
 
@@ -236,12 +248,16 @@ body {
 .footer-socialmedia-item:focus {
   background: var(--blue-color);
   cursor: pointer;
+  transition: background 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-socialmedia-link:hover,
 .footer-socialmedia-link:focus {
   background: var(--blue-color);
   border-radius: 50%;
+  transition: background 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-socialmedia-link {
   display: flex;
@@ -249,7 +265,8 @@ body {
   justify-content: center;
 }
 
-.footer-socialmedia-icon{padding: 12px;
+.footer-socialmedia-icon{
+  padding: 12px;
   fill: #fff;}
 
 
@@ -275,6 +292,8 @@ body {
 .about-links .about:hover,
 .about-links .about:focus {
   color: var(--main-link-color);
+  transition: background 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*kontakt links - mail and tel*/
@@ -293,6 +312,8 @@ body {
 }
 .primary-link:hover {
   color: var(--main-link-color);
+  transition: background 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*Text on main page and button under */
@@ -342,6 +363,8 @@ body {
 .button-order:focus {
   color: var(--white-text);
   cursor: pointer;
+  transition: background 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Lorem ipsum text */
@@ -442,7 +465,7 @@ font-weight: 700;
 }
 
 .team {
-    padding-bottom: 50px;
+  padding-bottom: 50px;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
@@ -515,10 +538,14 @@ font-weight: 700;
 .team-socialmedia-links:focus {
   background: var(--blue-color);
   border-radius: 50%;
+  transition: background 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-socialmedia-icon:hover {
   fill: #fff;
+  transition: background 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -561,6 +588,8 @@ font-weight: 700;
   fill: var(--blue-color);
   border-color: var(--blue-color);
   cursor: pointer;
+  transition: background 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cust-list-link{
