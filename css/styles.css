@@ -404,10 +404,16 @@ font-weight: 700;
 }
 
 .main-list {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-    justify-content: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-list-item {
+  margin: 0;
+  position: relative;
+  width: 370px;
+  height: 294px;
+  display: flex;
 }
 
 .main-list-item-desc {
