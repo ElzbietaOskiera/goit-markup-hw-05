@@ -65,7 +65,12 @@
           <h1 class="solution-main">
             EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
           </h1>
-          <button class="button-order" type="button">Zamów usługę</button>
+          <button class="button-order" type="button" data-modal-open>Zamów usługę</button>
+          <div class="modal-backdrop is-hidden" data-modal>
+            <section class="modal-content">
+              <button class="modal-exit" data-modal-close>X</button>
+            </section>
+          </div>
         </div>
       </div>
       <section class="first-section">
@@ -493,5 +498,6 @@
         </section>
       </div>
     </footer>
+    <script src="/goit-markup-hw-05/modal.js"></script>
   </body>
 </html>
