@@ -78,6 +78,7 @@ body {
   line-height: 1.14;
   color: var(--black-color);
   letter-spacing: 0.02em;
+  position: relative;
 }
 
 .portfolio-link {
@@ -86,6 +87,7 @@ body {
   line-height: 1.14;
   color: var(--black-color);
   letter-spacing: 0.02em;
+  position: relative;
 }
 
 .contact-link {
