@@ -145,6 +145,7 @@ body {
   top: 46px;
   background: var(--blue-color);
   height: 4px;
+  border-radius: 2px;
 }
 
 /*footer*/
