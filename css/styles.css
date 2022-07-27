@@ -106,7 +106,6 @@ body {
   gap: 30px;
 }
 
-
 .contact{color: #757575;
     text-decoration: none;
     font-style: normal;
@@ -130,26 +129,22 @@ body {
 .footer-email:focus,
 .footer-phone:hover,
 .footer-phone:focus,
-.portfolio-footer-email:hover,
-.portfolio-footer-email:focus,
 .portfolio-link:hover,
 .portfolio-link:focus {
   color: var(--blue-color);
   fill: var(--blue-color);
-  transition: background 250ms;
+  transition: color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .active::after {
   content: "";
   position: absolute;
-  bottom: 0;
   left: 0;
   right: 0;
-  top: 42.5px;
+  top: 46px;
   background: var(--blue-color);
   height: 4px;
-  border-radius: 10px 10px 10px 10px;
 }
 
 /*footer*/
@@ -250,16 +245,12 @@ body {
 .footer-socialmedia-item:focus {
   background: var(--blue-color);
   cursor: pointer;
-  transition: background 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-socialmedia-link:hover,
 .footer-socialmedia-link:focus {
   background: var(--blue-color);
   border-radius: 50%;
-  transition: background 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-socialmedia-link {
   display: flex;
@@ -271,6 +262,13 @@ body {
   padding: 12px;
   fill: #fff;}
 
+.footer-socialmedia-item:hover,
+.footer-socialmedia-item:focus,
+.footer-socialmedia-link:hover,
+.footer-socialmedia-link:focus {
+  transition: background 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 /*agencja,portfolio,kontakt - header*/
 
@@ -401,9 +399,7 @@ font-weight: 700;
   letter-spacing: 0.03em;
   margin: 0;
   padding-top: 30px;
-  
-  padding-bottom: 10px;
-   
+  padding-bottom: 10px; 
 }
 
 .description-text {
@@ -540,12 +536,15 @@ font-weight: 700;
 .team-socialmedia-links:focus {
   background: var(--blue-color);
   border-radius: 50%;
-  transition: background 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-socialmedia-icon:hover {
   fill: #fff;
+}
+
+.team-socialmedia-links:hover,
+.team-socialmedia-links:focus,
+.team-socialmedia-icon:hover{
   transition: background 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -601,6 +600,7 @@ font-weight: 700;
   width: 170px;
   height: 92px;
   fill: #afb1b8;}
+
 .cust-list-link:hover{fill: var(--blue-color);}
 
 /*buttons on top - portfolio page*/
@@ -612,7 +612,6 @@ font-weight: 700;
   padding: 94px 0;
   padding-bottom: 50px;
 }
-
 
 .button-list > li > button {
   font-weight: 500;
@@ -631,15 +630,17 @@ font-weight: 700;
   color: var(--white-text);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: color 250ms, background 250ms, box-shadow 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-list > li > button:focus {
   background-color: #2196f3;
   color: var(--white-text);
-  transition: color 250ms, background 250ms, box-shadow 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-list > li > button:hover,
+.button-list > li > button:focus{
+ transition: color 250ms, background 250ms, box-shadow 250ms;
+ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*portfolio list - images*/
@@ -658,7 +659,6 @@ display: flex;
 }
 
 .product-center {
-
     display: flex;
     flex-wrap: wrap;
     gap:30px;
@@ -761,10 +761,9 @@ display: flex;
 .modal-exit:hover,
 .modal-exit:focus {
   background: var(--blue-color);
-  color: var(--white-color);
+  color: var(--white-text);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  transition: background 250ms, color 250ms, box-shadow 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
